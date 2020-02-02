@@ -18,8 +18,11 @@ To make this simple check  out Github.com/TimzOwen repo on this same issues link
 Make the steps simple by: 
 
 •	Creating a subclass AsyncTask<> -class. //make this private:
+
 •	Handling the doInBackgroundTask() - Method
+
 •	Handle the onProgressUpdate() –method
+
 •	Handle onPostExecute() – method
 
 Make sure to pass in the correct parameter on the class i.e (params, progress , result)
