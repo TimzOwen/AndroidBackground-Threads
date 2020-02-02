@@ -5,22 +5,31 @@ using asycTask to do background threads in android patterns to avoid the UI crus
 
 With  Android operating system, Task that take long time should 
 not use same code as of the mainActivity Task.
+
 This may cause the application to hang and android system may 
 ask the user to quit the apllication
+
 rendering your app usesless and boring.
 To do good and well documented and coded background asyncTask, 
+
 Check this out from android team: https://developer.android.com/reference/android/os/AsyncTask 
 To make this simple check  out Github.com/TimzOwen repo on this same issues linked below: 
+
 Make the steps simple by: 
+
 •	Creating a subclass AsyncTask<> -class. //make this private:
 •	Handling the doInBackgroundTask() - Method
 •	Handle the onProgressUpdate() –method
 •	Handle onPostExecute() – method
+
 Make sure to pass in the correct parameter on the class i.e (params, progress , result)
 If you have no progress update make the input parameter “Void”;
+
 The awesomeness of the Threads and parallelism is it is difficult for the application to 
 Crash while as it allows the app to perform other things waiting for the background task.
+
 Why not make this external java file?
+
 The good thing about this is it allows the user to get and fetch IDs from the MainActivity 
 And prevents creation of many java files which is difficult for reviews.
 
