@@ -44,7 +44,19 @@ Download a file and not sure if the file is what time left
 ![askdon](https://user-images.githubusercontent.com/34624703/73610616-60633680-45ea-11ea-95e7-50143b01765a.gif)
 
 This demo shows the onUpdate task. 
+
 ![ask task](https://user-images.githubusercontent.com/34624703/73610619-62c59080-45ea-11ea-895b-0cfcfe2426cd.png)
+
+Some of the asyncType generic types are:
+
+1.	Params, the type of the parameters sent to the task upon execution.
+
+2.	Progress, the type of the progress units published during the background computation.
+
+3.	Result, the type of the result of the background computation
+
+Make sure to return the correct value to the private class created 
+
 
 
 
