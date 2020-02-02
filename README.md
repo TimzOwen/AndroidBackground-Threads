@@ -1,6 +1,8 @@
 # AndroidBackground-Threads
 using asycTask to do background threads in android patterns to avoid the UI crushing
+
 ![asycTask](https://user-images.githubusercontent.com/34624703/73610411-f34ea180-45e7-11ea-98dc-a5b610bf238c.png)
+
 With  Android operating system, Task that take long time should 
 not use same code as of the mainActivity Task.
 This may cause the application to hang and android system may 
@@ -21,10 +23,14 @@ Crash while as it allows the app to perform other things waiting for the backgro
 Why not make this external java file?
 The good thing about this is it allows the user to get and fetch IDs from the MainActivity 
 And prevents creation of many java files which is difficult for reviews.
+
 ![askprogress](https://user-images.githubusercontent.com/34624703/73610613-5ccfaf80-45ea-11ea-86a9-b7111a83a537.jpg)
+
 Allowing the user to check the progress is better than making a user keep waiting to 
 Download a file and not sure if the file is what time left
+
 ![askdon](https://user-images.githubusercontent.com/34624703/73610616-60633680-45ea-11ea-95e7-50143b01765a.gif)
+
 This demo shows the onUpdate task. 
 ![ask task](https://user-images.githubusercontent.com/34624703/73610619-62c59080-45ea-11ea-895b-0cfcfe2426cd.png)
 
